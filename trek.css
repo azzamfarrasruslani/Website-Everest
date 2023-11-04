@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: "Montserrat";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 3px;
+  background-color: #dcd9d9;
+  min-height: 3500px;
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1px 4%;
+  /* background-color: rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgb(255, 255, 255); */
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+}
+
+.navbar .logo {
+  width: 4rem;
+  cursor: pointer;
+  margin: 10px 0;
+  box-sizing: 4rem;
+  left: 50rem;
+}
+
+.navbar .navbar-nav a {
+  color: #000000;
+  display: inline-block;
+  font-size: 1.1rem;
+  margin: 0 1.3rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: #f7c04a;
+  transition: 0.3s;
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid;
+  transform: scaley(0);
+  transition: 0.3s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scale(0.5);
+}
+
+.navbar .navbar-extra a {
+  color: black;
+  margin: 0 0.8rem;
+}
+
+.navbar .navbar-extra a:hover {
+  color: #f7c04a;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+/* hero section */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("gambar/30.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero .content {
+  padding-left: 20rem;
+  max-width: 100rem;
+}
+
+.hero .content h1 {
+  padding-top: 5rem;
+  font-size: 2.4rem;
+  color: #f7c04a;
+  text-shadow:1px 1px 3px rgba(1, 1, 3, 0.5);
+  border-radius: 1rem;
+}
+
+/* treks section */
+.treks {
+  padding: 6rem 7% 10rem;
+}
+
+.treks h2 {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 6rem;
+}
+
+.treks h2 span {
+  color: #f7c04a;
+}
+
+.treks .row {
+  display: flex;
+}
+
+.treks .treks-img {
+  flex: 1 1 45rem;
+}
+
+.treks .row .treks-img img {
+  width: 50%;
+}
+
+.treks .row .content {
+  flex: 1 1 35rem;
+  padding: 0 1rem;
+}
+
+.treks .row .content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.treks .row .content p {
+  margin-bottom: 0.8rem;
+  font-size: 1.4rem;
+  font-weight: 100;
+  line-height: 1.6;
+}
